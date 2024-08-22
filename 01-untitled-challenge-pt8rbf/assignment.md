@@ -9,6 +9,7 @@ tabs:
   title: rhel
   type: terminal
   hostname: rhel
+  cmd: exec bash
 difficulty: ""
 timelimit: 0
 lab_config:
@@ -19,5 +20,5 @@ Install Podman
 The first task is to install Podman.
 
 ```bash,run
-dnf install -y podman
+dnf install -y module container-tools
 ```
