@@ -1,5 +1,5 @@
 ---
-slug: untitled-challenge-pt8rbf
+slug: install-podman
 id: sdacxyrag13f
 type: challenge
 title: Install Podman
