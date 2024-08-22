@@ -1,4 +1,4 @@
-slug: untitled-track-xj40vt
+slug: rootless-podman-service
 id: olghe3gyqvaq
 revision: 1
 title: Configure a rootless podman service
@@ -23,7 +23,4 @@ lab_config:
   feedback_recap_enabled: true
   feedback_tab_enabled: false
   lab_v2: true
-  theme:
-    name: modern-dark
-  override_challenge_layout: false
   loadingMessages: true
