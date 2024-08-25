@@ -20,5 +20,5 @@ Install Podman
 The first task is to install Podman.
 
 ```bash,run
-dnf install -y podman
+dnf install -y podman container-tools
 ```
