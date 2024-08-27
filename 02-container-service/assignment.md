@@ -9,7 +9,7 @@ tabs:
   title: rhel
   type: terminal
   hostname: rhel
-  cmd: exec bash
+  cmd: exec bash; su garfield
 - id: g9vyfwpwvl7p
   title: Editor
   type: code
