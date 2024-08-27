@@ -1,3 +1,0 @@
-#!/bin/bash
-useradd -m garfield
-usermod -a -G wheel garfield
