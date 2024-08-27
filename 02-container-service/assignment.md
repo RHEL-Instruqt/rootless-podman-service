@@ -14,7 +14,7 @@ tabs:
   title: Editor
   type: code
   hostname: rhel
-  path: /home/operator
+  path: /home/garfield
 difficulty: basic
 timelimit: 0
 lab_config:
