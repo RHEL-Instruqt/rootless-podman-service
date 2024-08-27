@@ -29,7 +29,10 @@ There are many types of Podman systemd unit files, including container, volume, 
 
 Configure the container unit file
 ===
-Click on this red button labelled `rhel1`: [button label="rhel1" background="#ee0000" color="#c7c7c7"](tab-0).
+We will
+Click on this red button: [button label="rhel" background="#ee0000" color="#c7c7c7"](tab-0) to switch the menu context to the rhel terminal.
+
+Run the follow
 
 Notice that
 
