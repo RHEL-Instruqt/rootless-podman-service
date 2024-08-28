@@ -1,15 +1,16 @@
 ---
-slug: container-service
+slug: container-service-files
 id: tyszkauozwch
 type: challenge
-title: Configure the container service
-teaser: Configure how the container will run as a rootless service.
+title: Create the container service configuration files
+teaser: Create the container service configuration files, including the container
+  and volume unit files.
 notes:
 - type: text
   contents: |-
     Podman integrates seamlessly into Linux systems, and supports systemd. Linux commonly uses the systemd init system to manage local services such as web servers, container engines, network daemons, and all of their interdependencies.
 
-    We will walk through the configuration of systemd unit files to set up an Apache web server container. Once the unit files are created, we'll start the container service which initiates the automatic download of a specified container image, and set up the persistent storage to store the data to serve a web page.
+    For more information, refer to [this documentation](https://docs.podman.io/en/latest/markdown/podman-systemd.unit.5.html).
 tabs:
 - id: xjy3ghgj4zw3
   title: rhel
@@ -30,7 +31,9 @@ There are many types of Podman systemd unit files, including container, volume, 
 
 Create the configuration directory
 ===
-The unit files will be stored in `/home/garfield/.config/containers/systemd/`.
+In the terminal we are logged in as the user `garfield`. `garfield` is not a privileged user.
+
+We'll create a directory in `garfield`'s home directory to store our unit files. The unit files will be stored in `/home/garfield/.config/containers/systemd/`.
 
 Run the command below by clicking on the `run` button.
 
@@ -41,13 +44,21 @@ mkdir -p ~/.config/containers/systemd/
 Create the unit files
 ===
 We will create two unit files.
-1) nginx
+1) `httpd.container`
+2) `httpd-data.volume`
 
-Click on this red button: [button label="rhel" background="#ee0000" color="#c7c7c7"](tab-0) to switch the menu context to the rhel terminal.
+Run the command below, by clicking on the run button, to create the `httpd.container` file.
 
-Run the follow
+```bash,run
+touch ~/.config/containers/systemd/httpd.container
+```
 
-Notice that
+Run the command below to create the `httpd-data.volume` file.
 
+```bash,run
+touch ~/.config/containers/systemd/httpd-data.volume
+```
+
+We'll configure these files and discuss their purpose in the next assignment. Click next to proceed.
 
 
