@@ -9,7 +9,7 @@ notes:
   contents: In this assigment we'll check that the container service runs properly.
 tabs:
 - id: cnwbgdnn9qlw
-  title: rhle
+  title: rhel
   type: terminal
   hostname: rhel
   cmd: su - garfield
@@ -28,7 +28,7 @@ We'll check the service is running properly and then modify the index.html throu
 
 Check the service
 ===
-Run the following command to check that the httpd container is running.
+In the [button label="rhel" background="#ee0000" color="#c7c7c7"](tab-0)  terminal, run the following command to check that the httpd container is running.
 ```bash,run
 podman ps
 ```
