@@ -4,6 +4,9 @@ id: ndxdhfrqtsoa
 type: challenge
 title: Verify the container service is working
 teaser: Verify that the container service is working.
+notes:
+- type: text
+  contents: In this assigment we'll check that the container service runs properly.
 tabs:
 - id: cnwbgdnn9qlw
   title: rhle
