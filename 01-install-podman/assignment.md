@@ -30,7 +30,7 @@ Install Podman
 The first task is to install Podman.
 
 ```bash,run
-dnf install -y podman container-tools
+dnf install -y podman
 ```
 The output should look similar to the following screenshot.
 
