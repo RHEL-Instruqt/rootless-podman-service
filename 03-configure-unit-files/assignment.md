@@ -72,4 +72,25 @@ Group=garfield
 ```
 The `Volume` section specifies that the user `garfield` and members of the group `garfield` have rights to modify the persistent volume that will be created.
 
+Verify configuration files have been created successfully
+===
+Let's check that the configuration files have been created and saved.
+Switch to the `rhel` terminal by clicking this button: [button label="rhel" background="#ee0000" color="#c7c7c7"](tab-0)
 
+Run the following command to find the unit files we just saved.
+```bash,run
+ls /home/garfield/.config/containers/systemd/
+```
+![Aug-28-2024_at_14.40.44-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/928e4e214a2a131cde74c517114fa2f5/assets/Aug-28-2024_at_14.40.44-image.png)
+
+Run the following to view the contents of `httpd.container`.
+```bash,run
+cat /home/garfield/.config/containers/systemd/httpd.container
+```
+
+Run the following to view the contents of `httpd-data.volume`.
+```bash,run
+cat /home/garfield/.config/containers/systemd/httpd-data.volume
+```
+
+If you were to create multiple container services, all the unit files will be stored in `/home/garfield/.config/containers/systemd/`.

@@ -1,15 +1,19 @@
 ---
 slug: start-httpd-container-service
+id: qxfcgmgo5m9q
 type: challenge
 title: Start the httpd container service
 teaser: Start the httpd container service.
 tabs:
-- title: rhel
+- id: gluaaw8pdto0
+  title: rhel
   type: terminal
   hostname: rhel
   cmd: su - garfield
 difficulty: basic
 timelimit: 0
+lab_config:
+  default_layout_sidebar_size: 0
 ---
 In this assignment we'll start the httpd container service.
 
