@@ -11,11 +11,13 @@ notes:
     container service which initiates the automatic download of a specified container
     image, and set up the persistent storage to store the data to serve a web page.
 tabs:
-- title: rhel
+- id: wyuexm1ywhke
+  title: rhel
   type: terminal
   hostname: rhel
   cmd: su - garfield
-- title: Editor
+- id: brxigixpqh3o
+  title: Editor
   type: code
   hostname: rhel
   path: /home/garfield/.config/containers/systemd/
@@ -23,5 +25,6 @@ difficulty: basic
 timelimit: 0
 lab_config:
   default_layout_sidebar_size: 0
+  custom_layout: '{"root":{"children":[{"branch":{"size":65,"children":[{"leaf":{"tabs":["wyuexm1ywhke"],"activeTabId":"wyuexm1ywhke","size":48}},{"leaf":{"tabs":["brxigixpqh3o"],"activeTabId":"brxigixpqh3o","size":49}}]}},{"leaf":{"tabs":["assignment"],"activeTabId":"assignment","size":33}}],"orientation":"Horizontal"}}'
 ---
 
