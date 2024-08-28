@@ -9,18 +9,13 @@ notes:
   contents: |-
     Podman integrates seamlessly into Linux systems, and supports systemd. Linux commonly uses the systemd init system to manage local services such as web servers, container engines, network daemons, and all of their interdependencies.
 
-    We will walk through the configuration of systemd unit files to set up an nginx web server container. Once the unit files are created, we'll start the container service which initiates the automatic download of a specified container image, and set up the persistent storage to store the data to serve a web page.
+    We will walk through the configuration of systemd unit files to set up an Apache web server container. Once the unit files are created, we'll start the container service which initiates the automatic download of a specified container image, and set up the persistent storage to store the data to serve a web page.
 tabs:
 - id: xjy3ghgj4zw3
   title: rhel
   type: terminal
   hostname: rhel
   cmd: su - garfield; cd /home/garfield
-- id: g9vyfwpwvl7p
-  title: Editor
-  type: code
-  hostname: rhel
-  path: /home/garfield
 difficulty: basic
 timelimit: 0
 lab_config:
