@@ -29,12 +29,13 @@ lab_config:
 ---
 Now we'll configure the `httpd.container` and `httpd-data.volume` files.
 
-# Edit the httpd.container file
+Edit the httpd.container file
+===
 Switch to the `Editor` tab by clicking this button: [button label="Editor" background="#ee0000" color="#c7c7c7"](tab-1)
 In the `Editor` tab, click on `httpd.container`.
 ![Aug-28-2024_at_13.34.46-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/2816b854bcc4844abe6c928167a4dde7/assets/Aug-28-2024_at_13.34.46-image.png)
 
-Copy and paste the following code blog into the editor.
+Copy and paste the following code blog into the editor. Once pasted, the editor will automatically save the file.
 ```ini
 [Service]
 Restart=always
@@ -59,7 +60,16 @@ The `[Container]` section specifies the following:
 3) `Volume` defines that the directory inside of the container `/usr/local/apache2/htdocs` should be exposed to the host so that the user `garfield` can edit the contents.
 4) `PublishPort` defines port 8080 on the host should map to port 80 in the container.
 
-# Edit the httpd-data.volume file
+Edit the httpd-data.volume file
+===
 In the `Editor` tab, click on `httpd-data.volume`.
+![Aug-28-2024_at_13.48.33-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/ad52f2d71224fd5ae2d834f8815a4537/assets/Aug-28-2024_at_13.48.33-image.png)
+Copy and paste the following code blog into the editor.
+```ini
+[Volume]
+User=garfield
+Group=garfield
+```
+The `Volume` section specifies that the user `garfield` and members of the group `garfield` have rights to modify the persistent volume that will be created.
 
 
