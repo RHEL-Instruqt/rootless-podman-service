@@ -27,4 +27,39 @@ lab_config:
   default_layout_sidebar_size: 0
   custom_layout: '{"root":{"children":[{"branch":{"size":65,"children":[{"leaf":{"tabs":["wyuexm1ywhke"],"activeTabId":"wyuexm1ywhke","size":48}},{"leaf":{"tabs":["brxigixpqh3o"],"activeTabId":"brxigixpqh3o","size":49}}]}},{"leaf":{"tabs":["assignment"],"activeTabId":"assignment","size":33}}],"orientation":"Horizontal"}}'
 ---
+Now we'll configure the `httpd.container` and `httpd-data.volume` files.
+
+# Edit the httpd.container file
+Switch to the `Editor` tab by clicking this button: [button label="Editor" background="#ee0000" color="#c7c7c7"](tab-1)
+In the `Editor` tab, click on `httpd.container`.
+![Aug-28-2024_at_13.34.46-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/2816b854bcc4844abe6c928167a4dde7/assets/Aug-28-2024_at_13.34.46-image.png)
+
+Copy and paste the following code blog into the editor.
+```ini
+[Service]
+Restart=always
+
+[Container]
+ContainerName=httpd
+Image=docker.io/library/httpd
+Label="io.containers.autoupdate=registry"
+Environment=TZ=America/Vancouver
+Environment=VERSION=docker
+Volume=httpd-data.volume:/usr/local/apache2/htdocs:Z
+PublishPort=8080:80/tcp
+
+[Install]
+WantedBy=default.target
+```
+The `[Service]` section specifies that the `httpd.container` service should always be restarted regardless if it was shut down cleanly.
+
+The `[Container]` section specifies the following:
+1) `ContainerName` is `httpd`.
+2) `Image` defines where to pull the image from. In this case, it is being pulled from the docker.io public registry.
+3) `Volume` defines that the directory inside of the container `/usr/local/apache2/htdocs` should be exposed to the host so that the user `garfield` can edit the contents.
+4) `PublishPort` defines port 8080 on the host should map to port 80 in the container.
+
+# Edit the httpd-data.volume file
+In the `Editor` tab, click on `httpd-data.volume`.
+
 
