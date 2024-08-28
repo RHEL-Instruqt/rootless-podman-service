@@ -83,4 +83,4 @@ Run the curl command again.
 ```bash,run
 curl http://localhost:8080
 ```
-
+![Aug-28-2024_at_15.11.49-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/bc852f07a9e953531b16e6c2c4b93c64/assets/Aug-28-2024_at_15.11.49-image.png)
