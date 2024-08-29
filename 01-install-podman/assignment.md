@@ -27,7 +27,7 @@ lab_config:
 ---
 Install Podman
 ===
-The first task is to install Podman.
+The first task is to install Podman. This operation must be performed as root or a user with root privileges.
 
 ```bash,run
 dnf install -y podman

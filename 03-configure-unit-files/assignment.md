@@ -60,6 +60,8 @@ The `[Container]` section specifies the following:
 3) `Volume` defines that the directory inside of the container `/usr/local/apache2/htdocs` should be exposed to the host so that the user `garfield` can edit the contents.
 4) `PublishPort` defines port 8080 on the host should map to port 80 in the container.
 
+The specifications in the container section are usually documented by the maintainer of the container.
+
 Edit the httpd-data.volume file
 ===
 In the `Editor` tab, click on `httpd-data.volume`.
@@ -72,9 +74,11 @@ Group=garfield
 ```
 The `Volume` section specifies that the user `garfield` and members of the group `garfield` have rights to modify the persistent volume that will be created.
 
+A full list of options for volume unit files can be found [here](https://docs.podman.io/en/latest/markdown/podman-systemd.unit.5.html).
+
 Verify configuration files have been created successfully
 ===
-Let's check that the configuration files have been created and saved.
+Let's check that the configuration files have been created and saved. We'll also familiarize ourselves with how unit files are stored.
 Switch to the `rhel` terminal by clicking this button: [button label="rhel" background="#ee0000" color="#c7c7c7"](tab-0)
 
 Run the following command to find the unit files we just saved.

@@ -6,7 +6,7 @@ title: Verify the container service is working
 teaser: Verify that the container service is working.
 notes:
 - type: text
-  contents: In this assigment we'll check that the container service runs properly.
+  contents: In this assignment we'll check that the container service runs properly. We'll also show how to modify the contents of a container through its persistent volume.
 tabs:
 - id: cnwbgdnn9qlw
   title: rhel
@@ -28,7 +28,7 @@ We'll check the service is running properly and then modify the index.html throu
 
 Check the service
 ===
-In the [button label="rhel" background="#ee0000" color="#c7c7c7"](tab-0)  terminal, run the following command to check that the httpd container is running.
+In the [button label="rhel" background="#ee0000" color="#c7c7c7"](tab-0) terminal, run the following command to check that the httpd container is running.
 ```bash,run
 podman ps
 ```
@@ -60,7 +60,7 @@ curl http://localhost:8080
 
 Modify index.html
 ===
-Let's modify the index.html of the webserver. We do this by editing the index.html file without having to initiate a terminal connection into the container. We can directly modify the index.html file through the persistent volume mapping.
+Let's modify the index.html of the web server. We do this by editing the index.html file without having to initiate a terminal connection into the container. We can directly modify the index.html file through the persistent volume mapping.
 
 Persistent volumes for all rootless container services are located in `/home/garfield/.local/share/containers/storage/volumes/`.  For our httpd service, recall that we defined the `httpd-data.volume` file. The volume is contained in `systemd-httpd-data/`.
 ```bash,run
@@ -73,9 +73,9 @@ Notice that the `_data` directory is owned by garfield:garfield as we specified 
 Switch to the Editor tab by clicking on this button: [button label="Editor" background="#ee0000" color="#c7c7c7"](tab-1)
 ![Aug-28-2024_at_15.00.21-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/85e430cadedcc3639c52e47eeb27c41b/assets/Aug-28-2024_at_15.00.21-image.png)
 
-Change the sentence `It works!` to `I love lassagne.`.
+Change the sentence `It works!` to `I love lasagna.`.
 ```text
-I love lassagne
+I love lasagna.
 ```
 
 Switch back to the [button label="rhel" background="#ee0000" color="#c7c7c7"](tab-0) terminal.
