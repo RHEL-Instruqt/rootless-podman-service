@@ -51,6 +51,7 @@ PublishPort=8080:80/tcp
 
 [Install]
 WantedBy=default.target
+
 ```
 The `[Service]` section specifies that the `httpd.container` service should always be restarted regardless if it was shut down cleanly.
 
@@ -69,6 +70,7 @@ Copy and paste the following code blog into the editor.
 [Volume]
 User=garfield
 Group=garfield
+
 ```
 The `Volume` section specifies that the user `garfield` and members of the group `garfield` have rights to modify the persistent volume that will be created.
 
