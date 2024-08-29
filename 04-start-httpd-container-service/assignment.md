@@ -33,5 +33,3 @@ Next, start the `httpd.service` that we previously configured.
 systemctl --user start httpd.service
 ```
 
-> [!NOTE]
-> As we have just witnessed, Podman provides a tidy solution for deploying containers. We have created a container unit file (httpd.container) and a volume unit file (http-data.volume). With these 2 files, we can deploy containers as services in a repeatable manner, without having to set up anything else.

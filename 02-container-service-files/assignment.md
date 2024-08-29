@@ -43,7 +43,7 @@ mkdir -p ~/.config/containers/systemd/
 
 Create the unit files
 ===
-We will create two unit files. For now, we'll leave these files empty.
+We will create two unit files.
 1) `httpd.container`
 2) `httpd-data.volume`
 
@@ -60,3 +60,5 @@ touch ~/.config/containers/systemd/httpd-data.volume
 ```
 
 We'll configure these files and discuss their purpose in the next assignment. Click next to proceed.
+
+
