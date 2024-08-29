@@ -32,4 +32,4 @@ Next, start the `httpd.service` that we previously configured.
 ```bash,run
 systemctl --user start httpd.service
 ```
-
+Starting the `httpd.service` will automatically pull the httpd container from the docker.io registry.
