@@ -29,6 +29,8 @@ Install Podman
 ===
 The first task is to install Podman.
 
+Click on the `run` button for the code block below.
+
 ```bash,run
 dnf install -y podman
 ```
