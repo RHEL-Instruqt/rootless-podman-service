@@ -3,7 +3,7 @@ slug: install-podman
 id: sdacxyrag13f
 type: challenge
 title: Install Podman
-teaser: Install Podman
+teaser: Install Podman.
 notes:
 - type: text
   contents: |-
