@@ -24,8 +24,8 @@ tabs:
 difficulty: basic
 timelimit: 0
 lab_config:
-  default_layout_sidebar_size: 0
   custom_layout: '{"root":{"children":[{"branch":{"size":65,"children":[{"leaf":{"tabs":["wyuexm1ywhke"],"activeTabId":"wyuexm1ywhke","size":48}},{"leaf":{"tabs":["brxigixpqh3o"],"activeTabId":"brxigixpqh3o","size":49}}]}},{"leaf":{"tabs":["assignment"],"activeTabId":"assignment","size":33}}],"orientation":"Horizontal"}}'
+enhanced_loading: null
 ---
 Now we'll configure the `httpd.container` and `httpd-data.volume` files.
 
@@ -33,7 +33,7 @@ Edit the httpd.container file
 ===
 Switch to the `Editor` tab by clicking this button: [button label="Editor" background="#ee0000" color="#c7c7c7"](tab-1)
 In the `Editor` tab, click on `httpd.container`.
-![Aug-28-2024_at_13.34.46-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/2816b854bcc4844abe6c928167a4dde7/assets/Aug-28-2024_at_13.34.46-image.png)
+![Aug-28-2024_at_13.34.46-image.png](../assets/Aug-28-2024_at_13.34.46-image.png)
 
 Copy and paste the following code blog into the editor. Once pasted, the editor will automatically save the file.
 ```ini
@@ -64,7 +64,7 @@ The `[Container]` section specifies the following:
 Edit the httpd-data.volume file
 ===
 In the `Editor` tab, click on `httpd-data.volume`.
-![Aug-28-2024_at_13.48.33-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/ad52f2d71224fd5ae2d834f8815a4537/assets/Aug-28-2024_at_13.48.33-image.png)
+![Aug-28-2024_at_13.48.33-image.png](../assets/Aug-28-2024_at_13.48.33-image.png)
 Copy and paste the following code blog into the editor.
 ```ini
 [Volume]
@@ -83,7 +83,7 @@ Run the following command to find the unit files we just saved.
 ```bash,run
 ls /home/garfield/.config/containers/systemd/
 ```
-![Aug-28-2024_at_14.40.44-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/928e4e214a2a131cde74c517114fa2f5/assets/Aug-28-2024_at_14.40.44-image.png)
+![Aug-28-2024_at_14.40.44-image.png](../assets/Aug-28-2024_at_14.40.44-image.png)
 
 Run the following to view the contents of `httpd.container`.
 ```bash,run

@@ -22,8 +22,7 @@ tabs:
   cmd: exec bash
 difficulty: ""
 timelimit: 0
-lab_config:
-  default_layout_sidebar_size: 0
+enhanced_loading: null
 ---
 Install Podman
 ===
@@ -36,6 +35,6 @@ dnf install -y podman
 ```
 The output should look similar to the following screenshot.
 
-![Aug-27-2024_at_12.36.58-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/6dd26b2848db9f236013412bcd012350/assets/Aug-27-2024_at_12.36.58-image.png)
+![Aug-27-2024_at_12.36.58-image.png](../assets/Aug-27-2024_at_12.36.58-image.png)
 
 Proceed to the next assignment.

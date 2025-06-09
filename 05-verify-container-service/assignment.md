@@ -21,8 +21,8 @@ tabs:
 difficulty: basic
 timelimit: 0
 lab_config:
-  default_layout_sidebar_size: 0
   custom_layout: '{"root":{"children":[{"branch":{"size":65,"children":[{"leaf":{"tabs":["cnwbgdnn9qlw"],"activeTabId":"cnwbgdnn9qlw","size":48}},{"leaf":{"tabs":["0px5a3hqzu86"],"activeTabId":"0px5a3hqzu86","size":49}}]}},{"leaf":{"tabs":["assignment"],"activeTabId":"assignment","size":33}}],"orientation":"Horizontal"}}'
+enhanced_loading: null
 ---
 We'll check the service is running properly and then modify the index.html through the persistent volume.
 
@@ -32,13 +32,13 @@ In the [button label="rhel" background="#ee0000" color="#c7c7c7"](tab-0)  termin
 ```bash,run
 podman ps
 ```
-![Aug-28-2024_at_14.44.51-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/cec7903cb7b5739b3329757e67d742a0/assets/Aug-28-2024_at_14.44.51-image.png)
+![Aug-28-2024_at_14.44.51-image.png](../assets/Aug-28-2024_at_14.44.51-image.png)
 
 Let's check the systemd service is running the container.
 ```bash,run
 systemctl --user status httpd --no-pager
 ```
-![Aug-28-2024_at_14.46.02-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/5f6b2c63fe43e85a3796ee778025121d/assets/Aug-28-2024_at_14.46.02-image.png)
+![Aug-28-2024_at_14.46.02-image.png](../assets/Aug-28-2024_at_14.46.02-image.png)
 
 You can stop and start the httpd service with the following commands.
 
@@ -56,7 +56,7 @@ Now let's check that the web server actually works.
 ```bash,run
 curl http://localhost:8080
 ```
-![Aug-28-2024_at_14.52.56-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/d1229aa96426be7cf2ba4ab882238ff2/assets/Aug-28-2024_at_14.52.56-image.png)
+![Aug-28-2024_at_14.52.56-image.png](../assets/Aug-28-2024_at_14.52.56-image.png)
 
 Modify index.html
 ===
@@ -66,12 +66,12 @@ Persistent volumes for all rootless container services are located in `/home/gar
 ```bash,run
 ls -la /home/garfield/.local/share/containers/storage/volumes/systemd-httpd-data/
 ```
-![Aug-28-2024_at_14.57.37-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/7b203c4102e7f3630c7a15ee26d28ee0/assets/Aug-28-2024_at_14.57.37-image.png)
+![Aug-28-2024_at_14.57.37-image.png](../assets/Aug-28-2024_at_14.57.37-image.png)
 
 Notice that the `_data` directory is owned by garfield:garfield as we specified in the `httpd-data.volume` unit file.
 
 Switch to the Editor tab by clicking on this button: [button label="Editor" background="#ee0000" color="#c7c7c7"](tab-1)
-![Aug-28-2024_at_15.00.21-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/85e430cadedcc3639c52e47eeb27c41b/assets/Aug-28-2024_at_15.00.21-image.png)
+![Aug-28-2024_at_15.00.21-image.png](../assets/Aug-28-2024_at_15.00.21-image.png)
 
 Change the sentence `It works!` to `I love lasagna.`.
 ```text
@@ -83,4 +83,4 @@ Run the curl command again.
 ```bash,run
 curl http://localhost:8080
 ```
-![Aug-28-2024_at_15.11.49-image.png](https://play.instruqt.com/assets/tracks/olghe3gyqvaq/bc852f07a9e953531b16e6c2c4b93c64/assets/Aug-28-2024_at_15.11.49-image.png)
+![Aug-28-2024_at_15.11.49-image.png](../assets/Aug-28-2024_at_15.11.49-image.png)
