@@ -20,6 +20,7 @@ tabs:
 difficulty: basic
 timelimit: 0
 lab_config:
+  default_layout_sidebar_size: 0
   custom_layout: '{"root":{"children":[{"branch":{"size":65,"children":[{"leaf":{"tabs":["xjy3ghgj4zw3"],"activeTabId":"xjy3ghgj4zw3","size":48}},{"leaf":{"tabs":["g9vyfwpwvl7p"],"activeTabId":"g9vyfwpwvl7p","size":48}}]}},{"leaf":{"tabs":["assignment"],"activeTabId":"assignment","size":33}}],"orientation":"Horizontal"}}'
 enhanced_loading: null
 ---

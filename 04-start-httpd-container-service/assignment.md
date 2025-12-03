@@ -15,6 +15,8 @@ tabs:
   cmd: su - garfield
 difficulty: basic
 timelimit: 0
+lab_config:
+  default_layout_sidebar_size: 0
 enhanced_loading: null
 ---
 In this assignment we'll start the httpd container service.
